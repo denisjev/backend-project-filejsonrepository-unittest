@@ -7,7 +7,7 @@ namespace UnitTest;
 public class UnitTestUsersRepositoryFromFile
 {
     [Fact]
-    public async void GetAllUsers()
+    public async void Get_All_Users()
     {
         var _target = new UserRepostoryFromFile();
 
@@ -18,7 +18,7 @@ public class UnitTestUsersRepositoryFromFile
     }
       
     [Fact]
-    public async void GetUserById()
+    public async void Get_User_By_Id()
     {
         var _target = new UserRepostoryFromFile();
         var listUser = await _target.GetAll();
@@ -29,7 +29,7 @@ public class UnitTestUsersRepositoryFromFile
     }
 
     [Fact]
-    public async void AddUser()
+    public async void Add_User()
     {
         var _target = new UserRepostoryFromFile();
         var newUser = new User(
